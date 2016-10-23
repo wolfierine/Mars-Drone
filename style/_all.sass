@@ -1,0 +1,49 @@
+$primary-font: 'Montserrat', sans-serif
+
+
+html
+	font: 
+		size: 10px
+
+body
+	margin: 0
+	padding: 0
+	width: 100%	
+
+	.container
+		max-width: 100%
+		overflow: hidden
+
+.center 	
+	margin: 0 auto 
+	width: 90%		
+
+.button
+	text-decoration: none 
+	color: #000	
+.red-accent
+	color: #ff343d
+
+.break-line
+	display: block			
+
+.logo
+	font:
+		family: $primary-font
+		size: 3.2rem
+		weight: 700
+	text-decoration: none 
+	color: #000
+	text-transform: uppercase
+	position: relative
+	display: inline-block
+
+	&::after
+		content: ""
+		position: absolute
+		top: 0
+		right: -15px
+		width: 7px
+		height: 7px 
+		border-radius: 50%
+		border: 3px solid #ff343d	

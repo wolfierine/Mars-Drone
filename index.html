@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mars</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+	
+	<div class="container">
+		
+		<header id="home">
+			<div class="white-block-bg"></div>
+			<div class="red-block-bg">
+				<span class="text-mars">mars</span>
+			</div>
+			<div class="drone">
+				<div class="circle revealOnLoad" data-animation="flipInY">
+					<img src="images/dron-header.png" alt="flying drone">
+				</div>
+			</div>
+			<div class="center outer-header">
+				<div class="top">
+					<div class="left-side">
+						<a href="#" class="logo revealOnLoad" data-animation="fadeInDown">
+							mars
+						</a>
+						<span class="phone-number revealOnLoad" data-animation="fadeInDown">
+							<i class="fa fa-phone" aria-hidden="true"></i>+48 604 300 500
+						</span>
+					</div>
+					<div class="right-side">
+						<a href="#" class="buy-now revealOnLoad" data-animation="fadeInDown">
+							buy now
+						</a>
+						<nav>
+							<button type="button" class="hamburger">
+								<div class="line"></div>
+							</button>
+							<ul>
+								<li><a href="#" data-target="home">home</a></li>
+								<li><a href="#" data-target="about">about</a></li>
+								<li><a href="#" data-target="features">features</a></li>
+								<li><a href="#" data-target="products">products</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="inner-header">
+					<div class="slider">
+						<ul class="slider-nav">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<div class="slider-content revealOnLoad" data-animation="bounceInUp">
+							<div class="slider-content-1">
+								<h1>phantom</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p>Optio consectetur consequatur dolor.</p>
+							</div>
+							<div class="slider-content-2">
+								<h1>mavic</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p>Optio consectetur consequatur dolor.</p>
+							</div>
+							<div class="slider-content-3">
+								<h1>yuneec</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p>Optio consectetur consequatur dolor.</p>
+							</div>
+							<div class="slider-content-4">
+								<h1>3dr solo</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p>Optio consectetur consequatur dolor.</p>
+							</div>
+						</div>
+					</div>
+					<a href="#fly" data-target="fly" class="scroll-down">scroll down</a>
+				</div>
+			</div>
+		</header>
+
+
+		<main>
+
+			<div class="fly" id="fly">
+				<div class="circle"></div>
+				<div class="tap-to-fly-box revealOnScroll" data-animation="flipInY" data-timeout="1000">
+					<div class="content-wrapper">
+						<h1>tap to fly</h1>
+						<p>lorem ipsum dolor sit amet.</p>
+					</div>
+				</div>
+				<div class="fly-higher-box">
+					<div class="fly-higher-content">
+						<h1 class="revealOnScroll" data-animation="flipInX">
+							<span>fly higher</span>
+							<span>than before</span>
+						</h1>
+					</div>
+					<a href="#" class="view-more button">
+						view more
+					</a>
+				</div>
+			</div>
+			
+			<section class="features" id="features">
+				<div class="center">
+					<h2 class="revealOnScroll" data-animation="lightSpeedIn">features</h2>
+					<div class="flex-box">
+						<div class="box revealOnScroll" data-animation="slideInUp">
+							<div class="img-container">
+								<img src="images/features-1.png" alt="">
+							</div>
+							<p class="features-desc">
+								New technology
+							</p>
+						</div>
+						<div class="box revealOnScroll" data-animation="slideInUp">
+							<div class="img-container">
+								<img src="images/features-2.png" alt="">
+							</div>
+							<p class="features-desc">
+								Good signal
+							</p>
+						</div>
+						<div class="box revealOnScroll" data-animation="slideInUp">
+							<div class="img-container">
+								<img src="images/features-3.png" alt="">
+							</div>
+							<p class="features-desc">
+								Easy to use
+							</p>
+						</div>
+						<div class="box revealOnScroll" data-animation="slideInUp">
+							<div class="img-container">
+								<img src="images/features-4.png" alt="">
+							</div>
+							<p class="features-desc">
+								Visibility
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="new-generation-of-vision" id="about">
+				<div class="photo-content">
+				</div>
+				<div class="content-box">
+					<div class="content-wrapper">
+						<h1 class="revealOnScroll" data-animation="pulse"><span class="break-line">new <span class="red-accent">generation</span></span> of vision<span class="red-accent">.</span></h1>
+						<a href="#" class="button view-more revealOnScroll" data-animation="bounceInRight">
+							<span>view more</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="new-generation-of-flying" id="products">
+				<div class="content-box">
+					<h1 class="revealOnScroll" data-animation="flip"><span class="break-line">new <span class="red-accent">generation</span></span> of flying<span class="red-accent">.</span></h1>
+					<a href="#" class="products button revealOnScroll" data-animation="tada" data-timeout="1000"><span>products</span></a>
+				</div>
+				<div class="img-container revealOnScroll">
+					
+				</div>
+			</div>
+
+			<div class="start-your-journey">
+				<div class="bg">
+					<div class="content-wrapper">
+						<h1>start your journey.</h1>
+						<a href="#" class="button view-more">
+							<span>view more</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+
+
+
+
+		<footer>
+			<div class="center">
+				<span class="text-bg">phantom</span>
+				<a href="#" class="logo">mars</a>
+				<p class="copyrights">2016 Copyright. All rights reserved by Symu.co</p>
+			</div>
+		</footer>
+
+	</div>
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/main.js"></script>	
+</body>
+</html>

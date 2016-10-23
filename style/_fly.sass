@@ -1,0 +1,151 @@
+$primary-font: 'Montserrat', sans-serif
+
+.fly
+	width: 100%
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center 
+	position: relative
+
+	.circle
+		position: absolute
+		top: 0
+		left: 25%
+		width: 700px
+		height: 100%
+		transform: translate(-25%, 0)
+		z-index: 9
+		background: 
+			image: url("../images/Circle.png")
+			size: contain
+			repeat: no-repeat
+
+	.tap-to-fly-box
+		width: 30%
+		height: 400px
+		display: flex 
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		background: 
+			color: #f8f9fb
+			image: url("../images/half-drone.jpg")
+			repeat: no-repeat
+			size: contain
+			position: left center
+		position: relative
+
+		.content-wrapper
+			display: flex 
+			flex-direction: column
+			justify-content: center
+			align-items: flex-start
+
+			h1 
+				font: 
+					family: $primary-font
+					size: 8rem
+					weight: 700
+				margin: 0
+				color: #000	
+				position: relative
+				z-index: 100
+
+				&:first-letter
+					text-transform: uppercase
+
+			p 
+				font: 
+					family: $primary-font
+					size: 1.8rem
+					weight: 400
+				color: #92a1a5
+				position: relative
+				z-index: 100
+				
+				&:first-letter
+					text-transform: uppercase			
+
+	.fly-higher-box
+		width: 70%
+		height: 400px
+		position: relative
+		background: 
+			image: url("../images/fly-higher-bg.jpg")
+			size: cover
+			repeat: no-repeat	
+		z-index: 999	
+
+		.fly-higher-content
+			position: absolute
+			top: 0
+			left: 0
+			width: 40%
+			height: 100%	
+			background: rgba(0,0,0,.65)	
+			display: flex 
+			justify-content: center
+			align-items: center
+			transition: all .5s cubic-bezier(0.6, -0.28, 0.74, 0.05)
+
+			&:hover
+				width: 60%
+
+			h1
+				color: #fff
+				font: 	
+					family: $primary-font
+					size: 8rem
+					weight: 700
+
+				&:first-letter
+					text-transform: uppercase	
+
+				span 
+					display: block
+
+		.view-more
+			position: absolute
+			top: 50%
+			right: 10%
+			color: #000
+			background: #fff 
+			border-radius: 30px
+			font: 
+				family: $primary-font
+				size: 2.4rem
+				weight: 700
+			padding: 10px 20px	
+			text-transform: uppercase	
+			transform: translate(0, -50%) rotate(-90deg)
+			transition: all .3s ease-out	
+
+			&::before
+				content: ""
+				position: absolute
+				bottom: 50%
+				left: -160%
+				height: 2px 
+				width: 140%
+				background: #fff	
+				z-index: 999
+
+			&::after
+				content: ""
+				position: absolute
+				z-index: -1
+				transform: scaleX(0)
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				background: #2098d1
+				border-radius: 30px
+				transition: all .3s ease-out	
+
+			&:hover::after
+				transform: scaleX(1)	
+			&:hover
+				color: #fff		
+	
